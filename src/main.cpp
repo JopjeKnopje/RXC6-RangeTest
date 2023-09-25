@@ -14,7 +14,7 @@
 
 #define BASE_TONE_BUZZER 220
 #define DURATION_TONE_BUZZER 500
-#define PIN_BUZZER 4
+#define PIN_BUZZER 14
 
 #define PIN_RADIO_D0 6
 #define PIN_RADIO_D1 7
