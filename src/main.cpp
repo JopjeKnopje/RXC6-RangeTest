@@ -113,7 +113,6 @@ void radio_setup()
 {
     for (int i = 0; i < ARRAY_SIZE(RADIO_PINS); i++)
         pinMode(RADIO_PINS[i], INPUT);
-    pinMode(PIN_RADIO_SIGNAL, INPUT);
 }
 
 t_pin radio_scan()
