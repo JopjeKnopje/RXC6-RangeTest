@@ -141,7 +141,9 @@ void loop()
 {
     // blocking call keeps on scanning until we receive a signal.
     t_pin pin = radio_scan();
+#ifdef BUZZER
     tone(PIN_BUZZER, BASE_TONE_BUZZER * (pin + 1) / 2, DURATION_TONE_BUZZER);
+#endif
 
     // when we receive signal update the `ui` struct with our `pin` variable as index.
     display_update_ui(&main_ui, pin);
